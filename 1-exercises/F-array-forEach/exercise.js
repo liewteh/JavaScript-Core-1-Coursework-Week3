@@ -9,8 +9,45 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-arr.forEach((arr, index) => console.log(index + ': ' + arr));
+// arr.forEach((arr, index) => console.log(index + ': ' + arr));
+// arr.forEach((num, index) => console.log(index + ': ' + num));
 
+// arr.forEach(function (num, index) {
+//   if (num %3 === 0 && num % 5 === 0) {
+//     console.log(index + ': ' + 'FizzBuzz');
+//   } else if (num % 5 === 0) {
+//     console.log(index + ': ' + 'Buzz');
+//   } else if (num % 3 === 0) {
+//     console.log(index + ': ' + 'Fizz');
+//   } else {
+//     console.log(index + ': ' + num);
+//   }
+// });
+
+arr.forEach((num, index) => {
+  if (num %3 === 0 && num % 5 === 0) {
+    console.log(index + ': ' + 'FizzBuzz');
+  } else if (num % 5 === 0) {
+    console.log(index + ': ' + 'Buzz');
+  } else if (num % 3 === 0) {
+    console.log(index + ': ' + 'Fizz');
+  } else {
+    console.log(index + ': ' + num);
+  }
+});
+
+/* below not working
+arr.forEach((num, index) =>
+  if (num %3 === 0 && num % 5 === 0) {
+    console.log(index + ': ' + 'FizzBuzz');
+  } else if (num % 5 === 0) {
+    console.log(index + ': ' + 'Buzz');
+  } else if (num % 3 === 0) {
+    console.log(index + ': ' + 'Fizz');
+  } else {
+    console.log(index + ': ' + num);
+  }
+); */
 
 /* EXPECTED OUTPUT */
 
