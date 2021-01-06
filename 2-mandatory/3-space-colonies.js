@@ -15,7 +15,9 @@
   
 */
 
-function colonisers() {}
+function colonisers(data) {
+  return data.filter (lastName => lastName[0] === 'A' && lastName.includes("family"));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

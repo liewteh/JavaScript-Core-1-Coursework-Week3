@@ -11,7 +11,10 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(data) {
+  let checkedData = data.find (data => (data.replace ("%", "") > 19.5 && data.replace ("%", "") < 23.5));
+  return checkedData;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

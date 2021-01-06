@@ -15,7 +15,7 @@ let story =
 
 let result = story.replace("dogs", "cats").replace("day", "night").replace(10, 100000).replace("dogs", "cats").replace("great", "brilliant").replace("day", "night");
 
-console.log(result + '\n \n');
+console.log(result + '\n');
 
 /* EXPECTED OUTPUT */
 

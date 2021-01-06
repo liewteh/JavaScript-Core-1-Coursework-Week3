@@ -22,8 +22,9 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 */
 
-function validatePasswords(passwords) {
-
+function validatePasswords(password) {
+  let regex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{5,})/;
+  return password.map((input, index) => !!input.match(regex) && password.indexOf(input) === index);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
